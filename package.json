@@ -1,4 +1,13 @@
-{  
+{    
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/pgm-claudeke/Uclicked.git"
+  },
+  "keywords": [
+    "Website",
+    "Craft",
+    "CMS"
+  ],
   "scripts": {
   "dev": "vite",
   "build": "vite build",
