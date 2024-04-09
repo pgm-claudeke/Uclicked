@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+body {
+    background-color: $clr-black;
+    color: $clr-white;
+}
+
+main {
+    margin-top: -0.1rem;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}

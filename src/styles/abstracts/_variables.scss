@@ -1,0 +1,51 @@
+//colors
+$clr-black: #151517;
+$clr-white: #FFFFFF;
+$clr-primary: #918FFF;
+$clr-primary--light: #C7C7FF;
+$clr-primary--lighter: #F5F5FF;
+$clr-primary--darker: #2727FF;
+$clr-secondary: #00fcff;
+
+// Spacings
+$sp-xxs: 0.5rem;
+$sp-xs: 1rem; 
+$sp-s: clamp(1.5rem, 2.5vw, 2.5rem);
+$sp-m: clamp(1.5rem, 2.5vw, 3.4rem);
+$sp-blocks: clamp(4rem, 10vw, 12rem);
+$sp-cta: clamp(4rem, 10vw, 10rem);
+
+// Border-radius
+$br-card: clamp(0.8rem, 2vw, 1.625rem) ;
+$br-input: 0.6rem;
+$br-button: 5rem;
+$br-button--small: 0.8rem;
+
+// Font-weight
+$fw-regular: 400;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;  
+
+// Font-size 
+$fs-h1: clamp(2rem, 5.5vw, 4rem);
+$fs-h2: clamp(1.8rem, 4vw, 3rem);
+$fs-h3: clamp(1.6rem, 2vw, 1.8rem);
+$fs-p--large: 1.4rem;
+$fs-p: 1.1rem;
+$fs-p--mobile: 1rem;
+$fs-nav: 0.9rem; 
+$fs-nav--mobile: clamp(1.8rem, 2vw, 2.5rem);
+
+
+// Breakpoints screen
+$screen-xxs: 318px;
+$screen-xs: 480px;
+$screen-s: 768px;
+$screen-m: 1024px;
+$screen-l: 1280px;
+$screen-xl: 1440px;
+
+// Box shadow
+$bs: 0px 2px 20px rgba($clr-black, 0.1);
+$bs--purple: 0px 2px 20px rgba($clr-primary--darker, 0.1);

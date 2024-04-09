@@ -1,0 +1,95 @@
+color: green
+fieldLayouts:
+  d1ec213b-92e1-491e-b3dc-e23b87412b77:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 755335fc-5aca-49c1-9b0d-7f5763f80f94
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 08eecd62-2726-47c3-bf5d-2ad4554e1430 # Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc2e68c3-1338-4dce-809c-ac3eabbf40a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7014fb7d-edda-405a-b9e9-1658416bf5ca
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4b96d956-e446-4be1-9b4f-fa85cfbd3d69 # Tags
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b0926aa-895a-4c14-b5dd-64b001cc6698
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 12d0607c-e6df-4326-9f6c-0fe318e6f29b
+        userCondition: null
+handle: expertises
+hasTitleField: true
+icon: list
+name: Expertises
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

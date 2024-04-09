@@ -1,0 +1,47 @@
+dateModified: 1712669624
+email:
+  fromEmail: claudinedekesel@hotmail.com
+  fromName: Uclicked
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    4b96d956-e446-4be1-9b4f-fa85cfbd3d69: Tags # Tags
+    5a789c66-a838-4ee6-bac8-09c7df998fb7: Social # Social
+    5c72c7b2-7a1c-4edf-8b98-a0f2bc44148e: Link # Link
+    08eecd62-2726-47c3-bf5d-2ad4554e1430: Icon # Icon
+    9a2f52fa-7fd4-4829-a714-10034e405d6c: Expertise # Expertise
+    26f1a557-d446-47f2-a573-7e9d972187c5: Home # Home
+    93eee091-ad6a-4c3c-befc-5967775858e5: Uclicked # Uclicked
+    998f64e5-f760-4ad8-a1e6-56595cfac6ea: Tools # Tools
+    6286d3b4-4c71-4a92-a574-bde6cb5f2ab9: Expertises # Expertises
+    8281cc9c-885e-4b2b-af1f-69d467ab438e: Contact # Contact
+    51990cb1-d5ed-418b-95bb-07ca6d6e258e: Work # Work
+    56913981-1b2f-42ca-ba3a-64a6a2b58b8d: Tools # Tools
+    a34a85ee-a035-4936-8703-75bba665b387: Text # Text
+    a2274db0-64ad-4f59-9623-a3412077c5c5: Uclicked # Uclicked
+    b9eea2eb-7da2-4fab-b84e-19a1fca5a9a5: About # About
+    c2986554-79d7-43b3-998b-4a718c4b07f7: Hero # Hero
+    daef5396-a035-4614-b8b6-85378f80d621: Home # Home
+    e54d784a-0509-430a-9623-1c11f99cfed1: Contact # Contact
+    ecaac4e5-f553-46ec-a0c0-906661a87adc: Expertises # Expertises
+    ee062bb8-9e99-418e-b265-d5d174a15317: Email # Email
+    eea874d8-2eb3-40ac-bb62-2eb01772fec2: Work # Work
+    f18e2668-3f92-4c4a-b4c0-dffe8f4c373a: Socials # Socials
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Uclicked
+  schemaVersion: 5.0.0.20
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

@@ -1,0 +1,65 @@
+color: green
+fieldLayouts:
+  f6e5fb96-0452-436c-84a1-9f928233f8df:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0b04213e-209d-4784-85dd-c0f253c671f9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5c72c7b2-7a1c-4edf-8b98-a0f2bc44148e # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 839e4642-4806-4e06-9817-4b3d0b60248e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Social
+        uid: 41ce8303-cc3b-44ed-beb6-06ae47250c76
+        userCondition: null
+handle: m_social
+hasTitleField: true
+icon: share
+name: Social
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

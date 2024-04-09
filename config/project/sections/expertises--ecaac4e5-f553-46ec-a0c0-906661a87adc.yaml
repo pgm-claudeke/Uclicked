@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 6286d3b4-4c71-4a92-a574-bde6cb5f2ab9 # Expertises
+handle: expertises
+maxAuthors: 1
+name: Expertises
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a2274db0-64ad-4f59-9623-a3412077c5c5: # Uclicked
+    enabledByDefault: false
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 526f823e-1fe8-4e8f-a77c-2130a8cdc04c
+type: structure

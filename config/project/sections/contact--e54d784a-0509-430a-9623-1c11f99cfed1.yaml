@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8281cc9c-885e-4b2b-af1f-69d467ab438e # Contact
+handle: contact
+maxAuthors: 1
+name: Contact
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a2274db0-64ad-4f59-9623-a3412077c5c5: # Uclicked
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

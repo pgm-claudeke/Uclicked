@@ -1,0 +1,122 @@
+color: green
+fieldLayouts:
+  5bf2ade5-8b1d-46d2-acc7-acdaf2d148f7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d1158e2a-98d6-4dd5-a3f6-e3d66c09b5d5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b217538e-0616-487a-bec9-6de572117d2a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6682185-59e6-475a-8951-63d90861dce0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
+            handle: f_slogan
+            includeInCards: false
+            instructions: null
+            label: Slogan
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc824287-88ef-4e72-a4ce-ddb760f4cc1d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: a731e080-b5bd-410c-ab56-c3f156b43c6e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
+            handle: f_title
+            includeInCards: false
+            instructions: null
+            label: Title
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fa4f55d-29f0-41cc-81f2-df94fdd62029
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
+            handle: f_description
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49646cbe-5430-4e1f-975a-d6149cd7ce4c
+            userCondition: null
+            warning: null
+            width: 100
+        name: About
+        uid: 5e12121e-9c1f-4027-832d-c18ec8582068
+        userCondition: null
+handle: home
+hasTitleField: true
+icon: house
+name: Home
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

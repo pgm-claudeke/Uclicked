@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: socials
+instructions: null
+name: Socials
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 5a789c66-a838-4ee6-bac8-09c7df998fb7 # Social
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

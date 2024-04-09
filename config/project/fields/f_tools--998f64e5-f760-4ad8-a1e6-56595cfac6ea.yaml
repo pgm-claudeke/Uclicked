@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: f_tools
+instructions: null
+name: Tools
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  source: 'taggroup:56913981-1b2f-42ca-ba3a-64a6a2b58b8d' # Tools
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Tags
