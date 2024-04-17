@@ -3,6 +3,34 @@ handle: f_icon
 instructions: null
 name: Icon
 searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:216ed538-45c5-465b-8945-011833aac1c8' # Icons
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:0a5f20a3-628b-45b5-be87-cc02bac4e750' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:216ed538-45c5-465b-8945-011833aac1c8' # Icons
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
 translationKeyFormat: null
-translationMethod: none
-type: craft\fields\Icon
+translationMethod: site
+type: craft\fields\Assets

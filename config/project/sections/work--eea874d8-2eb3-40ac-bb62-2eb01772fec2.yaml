@@ -21,9 +21,9 @@ propagationMethod: all
 siteSettings:
   a2274db0-64ad-4f59-9623-a3412077c5c5: # Uclicked
     enabledByDefault: false
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: pages/project.twig
+    uriFormat: '{slug}'
 structure:
   maxLevels: null
   uid: 9421cfdd-14f2-4236-9b6f-d4168cc4c147

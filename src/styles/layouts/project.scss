@@ -1,0 +1,192 @@
+@use "../abstracts" as *;
+
+.main--project {
+    height: 100vh; 
+    width: 100%;
+    margin: 0;
+    padding: 3rem 0;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: auto 30%;
+    gap: $sp-boxes;
+
+    // Swiper
+    &__assets {
+        overflow: hidden;
+        padding: 0;
+        border: solid $border $clr-black--lighter;
+        border-radius: $br;
+        line-height: 0;
+        display: block;
+        height: 100%;
+        align-self: stretch;
+        position: relative;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 0;
+        scale: 1.005;
+    }
+
+    &__button {
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        padding: 0.6rem;
+        background-color: rgba($clr-black, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10rem;
+        top: 49%;
+
+        fill: rgba($clr-white, 0.5);
+
+        &:hover {
+            fill: rgba($clr-white, 1);
+            cursor: pointer;
+        }
+    }
+
+    &__button--prev {
+        left: 1rem;
+    }
+
+    &__button--next {
+        right: 1rem;
+    }
+
+    &__button-icon {
+        height: 1.2rem;
+        aspect-ratio: 1/1;
+    }
+
+    &__assets--video {
+        background-color: $clr-black--lighter;
+    }
+
+    &__video {
+        height: 100%;
+        width: 100%;
+    }
+
+    // Info 
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: $sp-s;
+    }
+
+    &__box {
+        border: solid $border $clr-black--lighter;
+        border-radius: $br-s;
+        padding: $sp-boxes;
+    }
+
+    &__box--expertise {
+        grid-column: span 3;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__h2 {
+        font-size: $fs-button;
+        font-weight: $fw-bold;
+        margin-bottom: $sp-boxes;
+    }
+
+    &__expertise {
+        color: $clr-primary;
+    }
+
+    &__tools {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: $sp-xs;
+    }
+
+    &__tool {
+        background-color: $clr-black--light;
+        border: $clr-black--lighter solid $border;
+        padding: $sp-xs calc($sp-xs * 2);
+        width: fit-content;
+        border-radius: $br-xxs;
+    }
+
+    &__link {
+        margin-top: $sp-boxes;
+        color: $clr-primary;
+        fill: $clr-primary;
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: row;
+        gap: $br-xxs;
+        align-items: center;
+
+        &:hover {
+            fill: $clr-white;
+            color: $clr-white;
+        }
+    }
+
+    &__icon--link {
+        height: 1rem;
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: $sp-s;
+    }
+
+    &__nav-button {
+        color: $clr-white;
+        text-decoration: none;
+        font-weight: $fw-bold;
+        fill: $clr-white;
+        padding: $sp-boxes;
+        border-radius: $br-s;
+
+        display: flex;
+        flex-direction: row;
+        gap: $sp-xs;
+        align-items: center;
+        justify-content: center;
+
+        border: $clr-black--lighter $border solid;
+
+        &:hover {
+            fill: $clr-primary;
+            color: $clr-primary;
+            background-color: $clr-black--light;
+        }
+    }
+
+    &__next, &__prev {
+        grid-column: span 3;
+    }
+
+    &__inactive {
+        fill: $clr-black--lighter;
+        color: $clr-black--lighter;
+        
+        &:hover {
+            fill: $clr-black--lighter;
+            color: $clr-black--lighter;
+            background-color: $clr-black;
+        }
+    }
+
+    &__icon--nav {
+        height: 1rem;
+    }
+}

@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.skills {
+    &__list { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: $sp-boxes;
+    }
+
+    &__item {
+        background-color: $clr-black--light;
+        padding: .8rem 1.6rem;
+        border-radius: $br-xs;
+        font-size: $fs-h2--mobile;
+
+        @include screen($screen-s){
+            font-size: $fs-button;
+        }
+
+        &--selected {
+            background-color: $clr-primary;
+        }
+    }
+}

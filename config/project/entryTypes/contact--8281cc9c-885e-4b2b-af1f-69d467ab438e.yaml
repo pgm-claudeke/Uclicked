@@ -42,16 +42,16 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: b9a933b0-0508-46c5-bfda-706c5e6f207d
-            handle: null
+            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
+            handle: f_title
             includeInCards: false
             instructions: null
-            label: null
+            label: Title
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3bf326a6-967a-4590-ad61-166a7166f5f8
+            uid: 806d991d-4837-468f-9903-e1faf706b9cc
             userCondition: null
             warning: null
             width: 100

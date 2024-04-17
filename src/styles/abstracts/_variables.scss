@@ -1,42 +1,41 @@
 //colors
-$clr-black: #151517;
+$clr-black: #0B0B0C;
+$clr-black--light: #151517;
+$clr-black--lighter: #242427;
 $clr-white: #FFFFFF;
-$clr-primary: #918FFF;
-$clr-primary--light: #C7C7FF;
-$clr-primary--lighter: #F5F5FF;
-$clr-primary--darker: #2727FF;
-$clr-secondary: #00fcff;
+$clr-primary: #1279FF;
 
 // Spacings
-$sp-xxs: 0.5rem;
-$sp-xs: 1rem; 
-$sp-s: clamp(1.5rem, 2.5vw, 2.5rem);
-$sp-m: clamp(1.5rem, 2.5vw, 3.4rem);
-$sp-blocks: clamp(4rem, 10vw, 12rem);
-$sp-cta: clamp(4rem, 10vw, 10rem);
+$sp-xs: .5rem;
+$sp-s: 0.8rem;
+$sp-boxes: 1.25rem;
+$sp-section: 2.5rem;
 
 // Border-radius
-$br-card: clamp(0.8rem, 2vw, 1.625rem) ;
-$br-input: 0.6rem;
-$br-button: 5rem;
-$br-button--small: 0.8rem;
+$br: 1.5rem;
+$br-s: calc($br - 0.4rem);
+$br-xs: calc($br - 0.8rem);
+$br-xxs: calc($br - 1rem);
+
+//Font-family 
+$ff-primary: "Inter", sans-serif;
+$ff-secondary: "Inter", sans-serif;
 
 // Font-weight
 $fw-regular: 400;
-$fw-semi-bold: 600;
 $fw-bold: 700;
-$fw-extra-bold: 800;  
+$fw-black: 900;  
 
 // Font-size 
-$fs-h1: clamp(2rem, 5.5vw, 4rem);
-$fs-h2: clamp(1.8rem, 4vw, 3rem);
-$fs-h3: clamp(1.6rem, 2vw, 1.8rem);
-$fs-p--large: 1.4rem;
-$fs-p: 1.1rem;
-$fs-p--mobile: 1rem;
-$fs-nav: 0.9rem; 
-$fs-nav--mobile: clamp(1.8rem, 2vw, 2.5rem);
-
+$fs-p: 1.15rem;
+$fs-p--mobile: 0.95rem;
+$fs-button: 1.4rem;
+$fs-h2: 2rem;
+$fs-h2--mobile: 1.25rem;
+$fs-h1: 3rem;
+$fs-h1--mobile: 2.25rem;
+$fs-xl: 7rem;
+$fs-xl--mobile: 3rem;
 
 // Breakpoints screen
 $screen-xxs: 318px;
@@ -46,6 +45,8 @@ $screen-m: 1024px;
 $screen-l: 1280px;
 $screen-xl: 1440px;
 
-// Box shadow
-$bs: 0px 2px 20px rgba($clr-black, 0.1);
-$bs--purple: 0px 2px 20px rgba($clr-primary--darker, 0.1);
+// Max width
+$max-w: 1280px;
+
+// border 
+$border: .125rem;

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: f_textAlinea
+instructions: null
+name: 'Text Alinea'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 40f0a45c-ba73-4bf6-8fc8-38dc129b0bd3 # Regular text
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

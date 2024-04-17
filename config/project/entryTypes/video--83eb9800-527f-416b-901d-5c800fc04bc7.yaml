@@ -1,0 +1,80 @@
+color: green
+fieldLayouts:
+  3831a8b1-d0c1-468e-8ae5-d857f2caeccd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ce8956eb-7d93-4eb0-bb40-e0fcdffae576
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7440752-7251-4605-907b-7a296c79cdf5 # Video
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 190325a0-5549-447a-98b4-657c77798666
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a63856f-ed44-4d14-8d2a-948698db155d
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3ce1f0e-563b-4c12-adfc-7021c3759bd9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a762c468-f28e-4508-860d-ddcea37ff65e
+        userCondition: null
+handle: video
+hasTitleField: true
+icon: film
+name: Video
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,1 +1,14 @@
 {% extends "./layouts/base.twig" %}
+
+{% block content %}
+    {% include "./partials/header.twig" %}
+
+    <main x-data="{ expertise: '' }">    
+        {% include "./partials/hero.twig" %}
+        {% include "./partials/expertises.twig" %}
+        {% include "./partials/skills.twig" %}
+        {% include "./partials/work.twig" %}
+    </main>
+
+    {% include "./partials/footer.twig" %}
+{% endblock %}

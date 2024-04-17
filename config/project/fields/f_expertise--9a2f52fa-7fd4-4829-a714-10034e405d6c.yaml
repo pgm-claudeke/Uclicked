@@ -8,11 +8,11 @@ settings:
   branchLimit: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: null
+  maxRelations: 1
   minRelations: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   sources:
     - 'section:ecaac4e5-f553-46ec-a0c0-906661a87adc' # Expertises
   targetSiteId: null

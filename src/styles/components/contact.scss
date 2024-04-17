@@ -1,0 +1,54 @@
+@use "../abstracts" as *;
+
+.contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $sp-boxes;
+
+    @include screen($screen-s){
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    &__box {
+        background-color: $clr-black;
+        padding: 4rem;
+
+        @include screen($screen-s){
+            grid-column: span 4;
+        }
+    }
+
+    &__socials {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: $sp-boxes;
+
+        @include screen($screen-s){
+            grid-column: span 2;
+        }
+    }
+
+    &__link {
+        background-color: $clr-black;
+        border-radius: $br;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        fill: $clr-primary;
+
+        &:hover {
+            fill: $clr-white;
+            background-color: $clr-primary;
+        }
+    }
+
+    &__icon {
+        height: 5rem;
+    }
+}

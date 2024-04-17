@@ -1,0 +1,71 @@
+{% extends "./layouts/base.twig" %}
+
+{% block content %}
+    {% set tools = entry.f_skills.all() %}
+    {% set assets = entry.f_assets.one() %}
+
+    <main class="main--project">
+        <section class="section--project project">
+            {% if assets is not null and assets.type.name|lower == 'images' %}    
+                {% set images = assets.f_images.all() %}        
+                <div class="project__assets swiper">
+                    <div class="swiper-wrapper">
+                        {% for image in images %}
+                            <div class="swiper-slide">
+                                <img class="project__image" src="{{ image.getUrl()}}" alt="{{ image.title }}">
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="project__button project__button--prev">
+                        {{ svg('@webroot/assets/icons/chevron-left.svg')|attr({class: 'project__button-icon'}) }}
+                    </div>
+                    <div class="project__button project__button--next">
+                        {{ svg('@webroot/assets/icons/chevron-right.svg')|attr({class: 'project__button-icon'}) }}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            {% elseif assets is not null and assets.type.name|lower == 'video' %}
+                <div class="project__assets project__assets--video">                
+                    <video controls width="320" height="320" class="project__video">
+                        <source src="{{ assets.f_video.one().getUrl() }}" type="video/mp4">
+                    </video>
+                </div>
+            {% endif %}
+            <div class="project__info">
+                <div class="project__box">
+                    <h1 class="project__title">{{ entry.title }}</h1>
+                </div>
+                <div class="project__box">
+                    <h2 class="project__h2 project__expertise">{{ entry.f_expertise.one().title }}</h2>
+                    <div class="project__tools">                    
+                        {% for item in tools %}
+                            <div class="project__tool">
+                                <p>{{ item.title }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="project__box">
+                    <h2 class="project__h2">Year {{ entry.f_date|date('Y') }}</h2>
+                    <p>{{ entry.f_textAlinea }}</p>
+                    {% if entry.f_link %}                    
+                        <a class="project__link" target="_blank" href="{{ entry.f_link }}">
+                            {{ entry.f_linkText }} {{ svg('@webroot/assets/icons/link.svg')|attr({class: 'project__icon--link'}) }}
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="project__nav">
+                    <a href="{{ siteUrl }}" class="project__nav-button project__home">
+                        {{ svg('@webroot/assets/icons/house.svg')|attr({class: 'project__icon--nav'}) }}
+                    </a>
+                    <a href="{{ entry.prevSibling ? entry.prevSibling.url : '#' }}" class="project__nav-button project__prev {{ entry.prevSibling ? '' : 'project__inactive' }}">
+                        {{ svg('@webroot/assets/icons/chevron-left.svg')|attr({class: 'project__icon--nav'}) }} Previous
+                    </a>                  
+                    <a href="{{ entry.nextSibling ? entry.nextSibling.url : '#' }}" class="project__nav-button project__next {{ entry.nextSibling ? '' : 'project__inactive' }}">
+                        Next {{ svg('@webroot/assets/icons/chevron-right.svg')|attr({class: 'project__icon--nav'}) }}
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %} 

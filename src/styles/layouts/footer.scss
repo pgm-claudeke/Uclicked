@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__bottom {
+        padding: $sp-boxes 0;
+    }
+
+    &__text {
+        opacity: 0.4;
+        font-size: 0.8rem;
+    }
+}

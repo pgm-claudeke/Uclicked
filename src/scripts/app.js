@@ -1,3 +1,5 @@
 import '/src/styles/style.scss';
-
-console.log('test');
+import './nav';
+import './alpine';
+import './onload';
+import './swiper';

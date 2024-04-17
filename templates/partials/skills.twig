@@ -1,0 +1,11 @@
+{% set content = craft.entries().section('skills').all() %}
+
+<section class="section section--border skills" id="skills">
+    <h1>Skills & Tools</h1>
+    <ul class="skills__list">    
+        {% for item in content %}
+            {% set expertise = item.f_expertise.one().title %}
+            <li class="skills__item" :class="[expertise == '{{ expertise|kebab }}' ? 'skills__item--selected' : '']">{{ item.title }}</li>
+        {% endfor %}
+    </ul>
+</section>

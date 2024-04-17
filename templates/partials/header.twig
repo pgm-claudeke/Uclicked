@@ -1,0 +1,20 @@
+<header class="header"> 
+    <div class="header__nav">    
+        <nav class="nav" x-data="{ expanded: true }">
+            <div id="nav__icon" @click="expanded = ! expanded">
+                <div class="nav__bar--top">                
+                    <div class="nav__bar " :class="[expanded ? 'open' : 'closed']"></div>
+                </div>
+                <div class="nav__bar--bottom">
+                    <div class="nav__bar" :class="[expanded ? 'open' : 'closed']"></div>
+                </div>
+            </div>
+            <ul class="nav__list" x-show="expanded" x-collapse.duration.250ms>
+                <a class="nav__item" href="#about">About</a>
+                <a class="nav__item" href="#expertises">Expertises</a>
+                <a class="nav__item" href="#work">Work</a>
+                <a class="nav__item" href="#contact">Contact</a>
+            </ul>
+        </nav>
+    </div>
+</header>

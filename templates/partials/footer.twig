@@ -1,0 +1,22 @@
+{% set content = craft.entries().section('contact').one() %}
+{% set socials = content.socials.limit(4) %}
+
+<footer class="footer">
+    <section class="section--light footer--top" id="contact">
+        <div class="section contact">
+            <div class="box contact__box">
+                <h1>{{ content.f_title }}</h1>
+                <p>{{ content.f_text }}</p>
+                <a class="button" href="mailto:{{ content.f_email }}">Click to connect</a>
+            </div>
+            <div class="contact__socials">
+                {% for item in socials %}
+                    <a class="contact__link" href="{{item.f_link}}" target="_blank">{{ svg('@webroot/assets/icons/' ~ item.f_socials ~ '.svg')|attr({class: 'contact__icon'}) }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="section footer__bottom">
+        <p class="footer__text">Made by Claudine.</p>
+    </section>
+</footer>

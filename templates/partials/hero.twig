@@ -1,0 +1,24 @@
+{% set content = craft.entries().section('home').one() %}
+
+<section class="section hero" id="about">
+    <div class="box box--fillBorder hero__top">
+        <h1 class="hero__logo">Uclicked</h1>
+        <p class="hero__text">{{ content.f_text }}</p>
+    </div>
+    <div class="hero__bottom">    
+        <div class="box box--fillBorder hero__portrait">
+            <div></div>
+        </div>
+        <div class="box box--fillBorder hero__about">
+            <h1>{{ content.f_title }}</h1>
+            <p>{{ content.f_description }}</p>
+            <a class="button" href="">Scroll and see more</a>
+        </div>
+    </div>
+</section>
+
+<section class="slogan" id="slogan">
+    <div class="slogan__box">
+        {{ content.f_slogan }}
+    </div>
+</section>

@@ -1,0 +1,66 @@
+@use "../abstracts" as *;
+
+.expertises {
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $sp-boxes;
+
+        @include screen($screen-s){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__box {
+        border: solid $clr-black--light $border;
+
+        &:hover {
+            border: solid $clr-primary $border;
+            cursor: pointer;
+        }
+
+        &--selected { 
+            border: solid $clr-primary $border;
+        }
+    }
+
+    &__icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.5rem;
+        width: fit-content;
+        margin-bottom: $sp-boxes;
+    }
+
+    &__icon {
+        height: 2rem;
+        aspect-ratio: 1/1;
+    }
+
+    &__name {
+        margin-bottom: $sp-xs;
+        color: $clr-primary;
+    }
+
+    &__tags {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: $sp-xs;
+
+        color: $clr-primary;
+    }
+
+    &__tag { 
+        padding: .4rem 0.8rem;
+        border-radius: 0.5rem;
+        border: solid .08rem $clr-primary;
+    }
+
+    &__text {
+        margin-top: 1rem;
+    }
+}

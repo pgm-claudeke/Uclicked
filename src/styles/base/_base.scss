@@ -1,14 +1,65 @@
 @use "../abstracts" as *;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $clr-black;
     color: $clr-white;
+    font-family: "Inter", sans-serif;
+    position: relative;
 }
 
 main {
-    margin-top: -0.1rem;
-
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc($sp-section + 1rem);
+
+    margin: 3rem 0;
+
+    @include screen($screen-s){
+        gap: $sp-section;
+    }
+}
+
+h1, h2, h3 {
+    font-family: $ff-primary;
+}
+
+h1 {
+    font-size: $fs-h1--mobile;
+    font-weight: $fw-black;
+    margin-bottom: $sp-boxes;
+    line-height: 1.5;
+
+    @include screen($screen-s){
+        font-size: $fs-h1;
+    }
+}
+
+h2 {
+    font-size: $fs-h2--mobile;
+    font-weight: $fw-bold;
+    line-height: 1.5;
+
+    @include screen($screen-s){
+        font-size: $fs-h2;
+    }
+}
+
+p {
+    font-family: $ff-secondary;
+    font-size: $fs-p--mobile;
+    font-weight: $fw-regular;
+    line-height: 1.5;
+
+    @include screen($screen-s){
+        font-size: $fs-p;
+    }   
 }

@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.section {
+    width: 90%;
+    max-width: $max-w;
+}
+
+.section--project {
+    height: 100%;
+    width: 90%;
+    max-width: 1440px;
+
+}
+
+.section--border {
+    border: none;
+    padding: 0;
+
+    @include screen($screen-s){
+        border-radius: $br;
+        border: solid $clr-black--lighter $border;
+        padding: $sp-boxes;
+    }
+}
+
+.section--light {
+    background-color: $clr-black--light;
+    width: 100%;
+    padding: $sp-section 0;
+    display: flex;
+    justify-content: center;
+}

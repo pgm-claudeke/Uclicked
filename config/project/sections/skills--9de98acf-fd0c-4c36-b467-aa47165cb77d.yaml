@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - cec63c16-d6e9-41b6-9c34-4dceaa7f2c07 # Skills
+handle: skills
+maxAuthors: 1
+name: Skills
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a2274db0-64ad-4f59-9623-a3412077c5c5: # Uclicked
+    enabledByDefault: true
+    hasUrls: true
+    template: skills/_entry
+    uriFormat: 'skills/{slug}'
+structure:
+  maxLevels: null
+  uid: 42bfe24a-4eac-497b-a833-9fe7cd73191f
+type: structure

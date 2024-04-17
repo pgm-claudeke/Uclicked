@@ -1,0 +1,6 @@
+headingLevels: false
+name: 'Regular text'
+toolbar:
+  - bold
+  - italic
+  - link

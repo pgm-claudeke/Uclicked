@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: f_icons
+instructions: null
+name: Icons
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 1959c29e-73fd-4e22-9902-be38ade8a5c3 # icon
+  includeTableView: false
+  maxEntries: 4
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

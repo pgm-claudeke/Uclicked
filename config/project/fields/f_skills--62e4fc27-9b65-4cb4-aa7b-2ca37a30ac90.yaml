@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: f_tools
+handle: f_skills
 instructions: null
-name: Tools
+name: Skills
 searchable: false
 settings:
   allowSelfRelations: false
@@ -12,11 +12,12 @@ settings:
   minRelations: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: true
-  source: 'taggroup:56913981-1b2f-42ca-ba3a-64a6a2b58b8d' # Tools
+  showSiteMenu: false
+  sources:
+    - 'section:9de98acf-fd0c-4c36-b467-aa47165cb77d' # Skills
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Tags
+type: craft\fields\Entries

@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.slogan {
+    background-color: $clr-primary;
+    width: 100%;
+    padding: $sp-boxes;
+
+    &__box {
+        font-family: $ff-primary;
+        font-weight: $fw-bold;
+        font-size: 4.25rem;
+        height: 1lh;
+        overflow: hidden;
+        text-align: center;
+    }
+}

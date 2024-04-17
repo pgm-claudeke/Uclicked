@@ -1,0 +1,54 @@
+columnSuffix: null
+handle: f_socials
+instructions: null
+name: Socials
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Instagram
+        -
+          - value
+          - instagram
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Vimeo
+        -
+          - value
+          - vimeo
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - LinkedIn
+        -
+          - value
+          - linkedin
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Github
+        -
+          - value
+          - github
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: f_assets
+instructions: null
+name: Assets
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 62d960e2-6af4-4389-95c3-b7b5f093e6ce # Images
+    - 83eb9800-527f-416b-901d-5c800fc04bc7 # Video
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

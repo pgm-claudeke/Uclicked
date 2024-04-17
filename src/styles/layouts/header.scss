@@ -1,0 +1,124 @@
+@use "../abstracts" as *;
+
+.header {
+    position: fixed;
+    z-index: 10;
+    top: calc($sp-boxes + 3rem);
+    border: $br;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    &__nav {
+        width: 90%;
+        max-width: $max-w;
+        display: flex;
+        justify-content: right;
+    }
+}
+
+.nav {
+    background-color: rgba($clr-black--lighter, 0.6);
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    transition: all ease-in-out 0.3s;
+
+    margin-right: $sp-boxes;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: $br-xs;
+
+    @include screen($screen-s){
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__bar {
+        height: 0.2rem;
+        background-color: $clr-white;
+        width: .8rem;
+        border-radius: 0.05rem;
+        transition: transform 0.3s ease;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    &__bar--top {
+        margin-bottom: 0.25rem;
+        height: fit-content;
+
+        .closed {
+            transform: rotate(0deg);
+            
+        }
+    
+        .open {
+            transform: rotate(45deg);
+        }
+    }
+    
+    &__bar--bottom {
+        height: fit-content;
+
+        .closed {
+            transform: rotate(0deg);
+        }
+    
+        .open {
+            transform: rotate(-45deg);
+        }
+        
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        @include screen($screen-s){
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        font-weight: $fw-bold;
+        opacity: 1;
+        text-decoration: none;
+        color: $clr-white;
+        padding: $sp-boxes calc($sp-boxes/2);
+
+        &:hover {
+            color: $clr-primary;
+            cursor: pointer;
+        }
+
+        &:last-child {
+            padding-right: $sp-boxes;
+        }
+    }
+
+    .active {
+        color: $clr-primary;
+    }
+}
+
+#nav__icon {
+    padding: $sp-boxes;
+    height: calc($fs-p + ($sp-boxes * 2));
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

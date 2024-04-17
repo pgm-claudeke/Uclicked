@@ -1,0 +1,21 @@
+{% set content = craft.entries().section('work').limit(8) %}
+
+<section class="section section--border work" id="work">
+    <h1>Work</h1>
+    <ul class="work__list">
+        {% for item in content %}
+            {% set expertise = item.f_expertise.one().title %}
+            <li class="work__item work__item--{{loop.index}}">
+                <a class="work__link" href="{{ item.url }}" id="{{ item.title|lower|kebab }}">
+                    {% if item.f_thumbnail.one() is not null %}
+                        <img class="work__thumbnail" src="{{ item.f_thumbnail.one().getUrl() }}" alt="">
+                    {% endif %}
+                    <div class="work__info">
+                        <p class="work__title">{{ item.title }}</p>
+                        {# <p class="work__expertise">{{  item.f_expertise.one() }}</p> #}
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

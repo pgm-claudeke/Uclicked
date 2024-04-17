@@ -1,0 +1,85 @@
+@use "../abstracts" as *;
+
+.work {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: $sp-boxes;
+        list-style: none;
+
+        @include screen($screen-s){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        background-color: $clr-black--light;
+        border-radius: $br-s;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+
+        position: relative;
+        aspect-ratio: 1/1;
+        align-self: stretch;
+        border: solid $clr-black $border;
+
+        &:hover {
+            border: solid $clr-primary $border;
+        }
+    }
+
+    &__item--1 {
+        @include screen($screen-s){
+            grid-row: span 2;
+            align-self: stretch;
+        }
+    }
+
+    &__item--2, &__item--5, &__item--8 {
+        @include screen($screen-s){
+            grid-column: span 2;
+            aspect-ratio: 2/1;
+            align-self: stretch;
+        }
+    }
+
+    &__link {
+        color: $clr-white;
+    }
+
+    &__thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        scale: 1;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    &__info {
+        padding: $sp-boxes;
+
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__title {
+        font-size: $fs-h2;
+        font-weight: $fw-bold;
+        font-family: $ff-secondary;
+        line-height: 1;
+    }
+
+    &__expertise {
+        // margin-left: $sp-xs;
+    }
+}

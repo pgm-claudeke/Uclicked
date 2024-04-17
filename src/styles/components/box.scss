@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.box {
+    border-radius: $br;
+}
+
+.box--fill {
+    background-color: $clr-black--light;
+    border-radius: calc($br - 0.4rem);
+    padding: $sp-boxes;
+}
+
+.box--border {
+    border: solid $clr-black--lighter .125rem;
+}
+
+.box--fillBorder {
+    background-color: $clr-black--light;
+    border: solid $clr-black--lighter .125rem;
+    padding: 4rem;
+}
+
+
