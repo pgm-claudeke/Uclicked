@@ -1,0 +1,9 @@
+baseUrl: $SECONDARY_SITE_URL
+enabled: '1'
+handle: uclickedEn
+hasUrls: true
+language: en
+name: 'Uclicked En'
+primary: false
+siteGroup: 93eee091-ad6a-4c3c-befc-5967775858e5 # Uclicked
+sortOrder: 2

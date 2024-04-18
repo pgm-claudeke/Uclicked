@@ -3,7 +3,7 @@
 .header {
     position: fixed;
     z-index: 10;
-    top: calc($sp-boxes + 3rem);
+    top: calc($sp-boxes + $sp-boxes);
     border: $br;
     width: 100%;
     
@@ -13,6 +13,10 @@
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+
+    @include screen($screen-s){
+        top: calc($sp-boxes + 3rem);
+    }
 
     &__nav {
         width: 90%;
@@ -32,7 +36,7 @@
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     border-radius: $br-xs;
 
     @include screen($screen-s){
@@ -51,12 +55,11 @@
     }
 
     &__bar--top {
-        margin-bottom: 0.25rem;
         height: fit-content;
 
         .closed {
             transform: rotate(0deg);
-            
+            margin-bottom: 0.25rem;
         }
     
         .open {
@@ -81,9 +84,11 @@
         display: flex;
         flex-direction: column;
         list-style: none;
+        padding-bottom: calc($sp-boxes/2);
 
         @include screen($screen-s){
             flex-direction: row;
+            padding-bottom: 0;
         }
     }
 
@@ -92,7 +97,13 @@
         opacity: 1;
         text-decoration: none;
         color: $clr-white;
-        padding: $sp-boxes calc($sp-boxes/2);
+        padding: calc($sp-boxes/2) $sp-boxes;
+        text-align: right;
+
+        @include screen($screen-s){
+            padding: $sp-boxes calc($sp-boxes/2);
+            text-align: left;
+        }
 
         &:hover {
             color: $clr-primary;
@@ -109,16 +120,38 @@
     }
 }
 
-#nav__icon {
+.nav__icon {
     padding: $sp-boxes;
     height: calc($fs-p + ($sp-boxes * 2));
     aspect-ratio: 1/1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 
+    @include screen($screen-s){
+        flex-direction: column;
+    }
+
     &:hover {
         cursor: pointer;
+    }
+}
+
+.nav__icon--closed {
+    flex-direction: column;
+}
+
+.nav__icon--open {
+    .nav__bar--top {
+        margin-left: -1.3rem;
+
+        @include screen($screen-s){
+            margin-left: 0;
+        }
+    }
+
+    @include screen($screen-s){
+        gap: 0.3rem;
     }
 }

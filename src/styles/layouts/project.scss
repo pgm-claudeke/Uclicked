@@ -1,16 +1,27 @@
 @use "../abstracts" as *;
 
 .main--project {
-    height: 100vh; 
+    height: auto; 
     width: 100%;
     margin: 0;
-    padding: 3rem 0;
+    padding: $sp-boxes 0;
+
+    @include screen($screen-s){
+        height: 100vh; 
+        padding: 3rem 0;
+    }
 }
 
 .project {
-    display: grid;
-    grid-template-columns: auto 30%;
+    display: flex;
+    flex-direction: column;
     gap: $sp-boxes;
+
+    @include screen($screen-s){
+        display: grid;
+        grid-template-columns: auto 30%;
+        gap: $sp-boxes;
+    }
 
     // Swiper
     &__assets {
@@ -39,13 +50,17 @@
         top: 0;
         padding: 0.6rem;
         background-color: rgba($clr-black, 0.2);
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         border-radius: 10rem;
         top: 49%;
 
         fill: rgba($clr-white, 0.5);
+
+        @include screen($screen-s){
+            display: flex;
+        }
 
         &:hover {
             fill: rgba($clr-white, 1);
@@ -94,6 +109,7 @@
 
     &__title {
         margin-bottom: 0;
+        line-height: 1.2;
     }
 
     &__h2 {

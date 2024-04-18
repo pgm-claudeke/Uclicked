@@ -20,11 +20,11 @@ main {
     flex-direction: column;
     align-items: center;
     gap: calc($sp-section + 1rem);
-
-    margin: 3rem 0;
+    margin: $sp-boxes 0;
 
     @include screen($screen-s){
         gap: $sp-section;
+        margin: 3rem 0;
     }
 }
 
@@ -45,19 +45,20 @@ h1 {
 
 h2 {
     font-size: $fs-h2--mobile;
-    font-weight: $fw-bold;
-    line-height: 1.5;
+    font-weight: $fw-black;
+    line-height: 1.25;
 
     @include screen($screen-s){
         font-size: $fs-h2;
+        line-height: 1.5;
     }
 }
 
 p {
     font-family: $ff-secondary;
     font-size: $fs-p--mobile;
-    font-weight: $fw-regular;
-    line-height: 1.5;
+    font-weight: $fw-light;
+    line-height: 1.7;
 
     @include screen($screen-s){
         font-size: $fs-p;

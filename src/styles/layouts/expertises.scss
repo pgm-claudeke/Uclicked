@@ -41,13 +41,15 @@
     }
 
     &__name {
-        margin-bottom: $sp-xs;
+        margin-bottom: $sp-boxes;
         color: $clr-primary;
+        font-weight: $fw-bold;
     }
 
     &__tags {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         list-style: none;
         gap: $sp-xs;
 

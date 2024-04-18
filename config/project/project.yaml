@@ -1,4 +1,4 @@
-dateModified: 1713364815
+dateModified: 1713467006
 email:
   fromEmail: claudinedekesel@hotmail.com
   fromName: Uclicked
@@ -28,6 +28,7 @@ fs:
 meta:
   __names__:
     0a5f20a3-628b-45b5-be87-cc02bac4e750: Images # Images
+    3bbf42b8-b5c8-43e8-8af4-b0abae578917: 'Uclicked En' # Uclicked En
     4b96d956-e446-4be1-9b4f-fa85cfbd3d69: Tags # Tags
     5a789c66-a838-4ee6-bac8-09c7df998fb7: Socials # Socials
     5c72c7b2-7a1c-4edf-8b98-a0f2bc44148e: Link # Link
@@ -53,8 +54,6 @@ meta:
     a34a85ee-a035-4936-8703-75bba665b387: Text # Text
     a2274db0-64ad-4f59-9623-a3412077c5c5: Uclicked # Uclicked
     b2c49af5-fc90-4ae9-af7a-adb9ef6d0a06: Thumbnail # Thumbnail
-    b9eea2eb-7da2-4fab-b84e-19a1fca5a9a5: About # About
-    c2986554-79d7-43b3-998b-4a718c4b07f7: Hero # Hero
     ca146faa-4b2a-46e3-9141-cfb9d9dffeba: Video # Video
     cbc80322-2253-48cd-adad-4ec8f633b2f8: Socials # Socials
     cec63c16-d6e9-41b6-9c34-4dceaa7f2c07: Skills # Skills

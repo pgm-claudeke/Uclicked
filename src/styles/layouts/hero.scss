@@ -3,14 +3,25 @@
 .hero {
     display: flex;
     flex-direction: column;
-    gap: $sp-boxes;
+    gap: $sp-boxes--mobile;
+
+    @include screen($screen-s){
+        gap: $sp-boxes;
+    }
 
     &__top {
         text-align: center;
         padding: 4rem 2rem;
+        aspect-ratio: 4/5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
 
         @include screen($screen-s){
             padding: 8rem 16rem;
+            aspect-ratio: auto;
         }
     }
 
@@ -27,21 +38,31 @@
 
     &__text {
         color: $clr-primary;
-        font-size: $fs-h2--mobile;
+        font-size: $fs-button--mobile;
+        line-height: 1.2;
 
         @include screen($screen-s){
-            font-size: $fs-h2;
+            font-size: $fs-button;
         }
     }
 
     &__bottom {
         display: flex;
         flex-direction: column;
-        gap: $sp-boxes;
+        gap: $sp-boxes--mobile;
 
         @include screen($screen-s){
             display: grid;
             grid-template-columns: 33% 66%;
+            gap: $sp-boxes;
+        }
+    }
+
+    &__portrait {
+        aspect-ratio: 5/4;
+
+        @include screen($screen-s){
+            aspect-ratio: auto;
         }
     }
 }

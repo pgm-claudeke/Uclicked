@@ -7,10 +7,24 @@
 
     &__bottom {
         padding: $sp-boxes 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
     }
 
     &__text {
-        opacity: 0.4;
         font-size: 0.8rem;
+        opacity: 0.4;
+    }
+
+    &__language {
+        color: $clr-white;
+        text-decoration: none;
+        opacity: 0.4;
+
+        &:hover {
+            color: $clr-primary;
+            opacity: 1;
+        }
     }
 }

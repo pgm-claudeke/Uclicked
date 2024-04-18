@@ -1,10 +1,11 @@
 {% set content = craft.entries().section('contact').one() %}
 {% set socials = content.socials.limit(4) %}
+{% set sites = craft.app.sites.getAllSites() %}
 
 <footer class="footer">
     <section class="section--light footer--top" id="contact">
         <div class="section contact">
-            <div class="box contact__box">
+            <div class="box contact__box box--text">
                 <h1>{{ content.f_title }}</h1>
                 <p>{{ content.f_text }}</p>
                 <a class="button" href="mailto:{{ content.f_email }}">Click to connect</a>
@@ -18,5 +19,18 @@
     </section>
     <section class="section footer__bottom">
         <p class="footer__text">Made by Claudine.</p>
+        <div class="footer__languages">
+            {% for site in sites %}
+                {% if site.id != currentSite.id %}
+                    {% if entry is defined %}
+                        {% set localeEntry = craft.entries.id(entry.id).siteId(site.id).one() %}
+                    {% endif %}
+                    {% if localeEntry.siteId is defined and localeEntry.siteId != currentSite.id %}
+                        <a href="{{ localeEntry.url }}" class="footer__language">{{ localeEntry.site.language == 'en' ? 'English' : 'Nederlands' }}</a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <a href=""></a>
+        </div>
     </section>
 </footer>

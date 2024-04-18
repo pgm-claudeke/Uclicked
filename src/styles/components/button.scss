@@ -4,14 +4,19 @@
     background-color: $clr-primary;
     color: $clr-white;
     text-decoration: none;
-    font-size: $fs-button;
+    font-size: $fs-button--mobile;
     font-weight: $fw-bold;
     font-family: $ff-secondary;
-    padding: $sp-boxes calc($sp-boxes*2);
+    padding: $sp-boxes--mobile calc($sp-boxes--mobile*2);
     border-radius: 20rem;
     margin-top: 2rem;
     display: block;
     width: fit-content;
+
+    @include screen($screen-s){
+        padding: $sp-boxes calc($sp-boxes*2);
+        font-size: $fs-button;
+    }
 
     &:hover {
         background-color: $clr-black--lighter;

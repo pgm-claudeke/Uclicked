@@ -7,10 +7,16 @@
 
     &__box {
         font-family: $ff-primary;
-        font-weight: $fw-bold;
-        font-size: 4.25rem;
-        height: 1lh;
+        font-weight: $fw-black;
+        font-size: 2rem;
+        line-height: 1.25;
+        height: auto;
         overflow: hidden;
-        text-align: center;
+        text-align: left;
+
+        @include screen($screen-s){
+            font-size: 4rem;
+            text-align: center;
+        }
     }
 }

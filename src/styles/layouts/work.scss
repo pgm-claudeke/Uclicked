@@ -64,22 +64,32 @@
     }
 
     &__info {
-        padding: $sp-boxes;
+        padding: $sp-boxes--mobile;
 
         position: absolute;
         z-index: 1;
         bottom: 0;
         left: 0;
+
+        @include screen($screen-s){
+            padding: $sp-boxes;
+        }
     }
 
     &__title {
-        font-size: $fs-h2;
+        font-size: $fs-button--mobile;
         font-weight: $fw-bold;
         font-family: $ff-secondary;
         line-height: 1;
-    }
 
-    &__expertise {
-        // margin-left: $sp-xs;
+        background-color: rgba($clr-black, .2);
+        backdrop-filter: blur(10px);
+        padding: .4rem 0.8rem;
+        border-radius: $br-xxs;
+
+        @include screen($screen-s){
+            font-size: $fs-button;
+            padding: 0.8rem 1.6rem;
+        }
     }
 }

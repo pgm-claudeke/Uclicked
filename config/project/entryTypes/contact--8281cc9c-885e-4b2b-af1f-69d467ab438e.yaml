@@ -115,8 +115,8 @@ icon: address-book
 name: Contact
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
+slugTranslationKeyFormat: ''
+slugTranslationMethod: language
 titleFormat: ''
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationKeyFormat: ''
+titleTranslationMethod: language

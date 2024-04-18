@@ -19,6 +19,11 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
+  3bbf42b8-b5c8-43e8-8af4-b0abae578917: # Uclicked En
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/project.twig
+    uriFormat: '{slug}'
   a2274db0-64ad-4f59-9623-a3412077c5c5: # Uclicked
     enabledByDefault: false
     hasUrls: true

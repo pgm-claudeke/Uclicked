@@ -4,15 +4,15 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    gap: $sp-boxes;
+    gap: $sp-boxes--mobile;
 
     @include screen($screen-s){
         grid-template-columns: repeat(6, 1fr);
+        gap: $sp-boxes;
     }
 
     &__box {
         background-color: $clr-black;
-        padding: 4rem;
 
         @include screen($screen-s){
             grid-column: span 4;
@@ -25,16 +25,18 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: $sp-boxes;
+        gap: $sp-boxes--mobile;
 
         @include screen($screen-s){
             grid-column: span 2;
+            gap: $sp-boxes;
         }
     }
 
     &__link {
         background-color: $clr-black;
         border-radius: $br;
+        aspect-ratio: 1/1;
 
         display: flex;
         justify-content: center;
@@ -46,9 +48,17 @@
             fill: $clr-white;
             background-color: $clr-primary;
         }
+
+        @include screen($screen-s){
+            aspect-ratio: auto;
+        }
     }
 
     &__icon {
-        height: 5rem;
+        height: 3.5rem;
+
+        @include screen($screen-s){
+            height: 5rem;
+        }
     }
 }

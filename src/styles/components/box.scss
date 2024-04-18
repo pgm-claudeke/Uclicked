@@ -7,7 +7,11 @@
 .box--fill {
     background-color: $clr-black--light;
     border-radius: calc($br - 0.4rem);
-    padding: $sp-boxes;
+    padding: 1.5rem;
+
+    @include screen($screen-s){
+        padding: $sp-boxes;
+    }
 }
 
 .box--border {
@@ -17,7 +21,15 @@
 .box--fillBorder {
     background-color: $clr-black--light;
     border: solid $clr-black--lighter .125rem;
-    padding: 4rem;
+    
+}
+
+.box--text {
+    padding: 2rem;
+
+    @include screen($screen-s){
+        padding: 4rem;
+    }
 }
 
 

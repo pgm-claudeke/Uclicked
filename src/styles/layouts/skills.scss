@@ -6,17 +6,23 @@
         flex-direction: row;
         flex-wrap: wrap;
         list-style: none;
-        gap: $sp-boxes;
+        gap: $sp-boxes--mobile;
+
+        @include screen($screen-s){
+            font-size: $fs-button;
+        }
     }
 
     &__item {
         background-color: $clr-black--light;
-        padding: .8rem 1.6rem;
-        border-radius: $br-xs;
-        font-size: $fs-h2--mobile;
+        padding: .6rem 1.2rem;
+        border-radius: $br-xxs;
+        font-size: $fs-p--mobile;
 
         @include screen($screen-s){
             font-size: $fs-button;
+            padding: .8rem 1.6rem;
+            border-radius: $br-xs;
         }
 
         &--selected {

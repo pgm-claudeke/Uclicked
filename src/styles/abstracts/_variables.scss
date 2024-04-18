@@ -9,6 +9,7 @@ $clr-primary: #1279FF;
 $sp-xs: .5rem;
 $sp-s: 0.8rem;
 $sp-boxes: 1.25rem;
+$sp-boxes--mobile: 0.8rem;
 $sp-section: 2.5rem;
 
 // Border-radius
@@ -22,20 +23,22 @@ $ff-primary: "Inter", sans-serif;
 $ff-secondary: "Inter", sans-serif;
 
 // Font-weight
+$fw-light: 300;
 $fw-regular: 400;
 $fw-bold: 700;
 $fw-black: 900;  
 
 // Font-size 
 $fs-p: 1.15rem;
-$fs-p--mobile: 0.95rem;
+$fs-p--mobile: 1rem;
+$fs-button--mobile: 1.25rem;
 $fs-button: 1.4rem;
 $fs-h2: 2rem;
-$fs-h2--mobile: 1.25rem;
+$fs-h2--mobile: 1.6rem;
 $fs-h1: 3rem;
 $fs-h1--mobile: 2.25rem;
 $fs-xl: 7rem;
-$fs-xl--mobile: 3rem;
+$fs-xl--mobile: 3.5rem;
 
 // Breakpoints screen
 $screen-xxs: 318px;
