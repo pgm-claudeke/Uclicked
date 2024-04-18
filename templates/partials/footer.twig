@@ -8,7 +8,7 @@
             <div class="box contact__box box--text">
                 <h1>{{ content.f_title }}</h1>
                 <p>{{ content.f_text }}</p>
-                <a class="button" href="mailto:{{ content.f_email }}">Click to connect</a>
+                <a class="button" href="mailto:{{ content.f_email }}">{{ content.f_btnText }}</a>
             </div>
             <div class="contact__socials">
                 {% for item in socials %}

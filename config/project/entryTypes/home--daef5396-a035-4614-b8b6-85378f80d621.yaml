@@ -93,6 +93,21 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 115a7e48-bc3d-4fc6-bb67-0240a8eb88f6 # Text Alinea
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11f88386-e0da-49e2-a7de-c64324d9aa63
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
             handle: f_description
             includeInCards: false
@@ -106,6 +121,36 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 770b328f-0e41-499b-a559-935dab483e95 # Resume
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 853031af-4091-4048-a07c-b599875ac809
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
+            handle: f_btnText
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc0f5608-9c3c-4c4b-a725-97f6c219ac4f
+            userCondition: null
+            warning: null
+            width: 100
         name: About
         uid: 5e12121e-9c1f-4027-832d-c18ec8582068
         userCondition: null
@@ -115,8 +160,8 @@ icon: house
 name: Home
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

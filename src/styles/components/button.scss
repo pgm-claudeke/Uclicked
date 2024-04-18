@@ -13,7 +13,7 @@
     display: block;
     width: fit-content;
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         padding: $sp-boxes calc($sp-boxes*2);
         font-size: $fs-button;
     }

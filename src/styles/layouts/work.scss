@@ -9,6 +9,11 @@
 
         @include screen($screen-s){
             display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include screen($screen-m){
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(4, 1fr);
         }
@@ -32,14 +37,14 @@
     }
 
     &__item--1 {
-        @include screen($screen-s){
+        @include screen($screen-m){
             grid-row: span 2;
             align-self: stretch;
         }
     }
 
     &__item--2, &__item--5, &__item--8 {
-        @include screen($screen-s){
+        @include screen($screen-m){
             grid-column: span 2;
             aspect-ratio: 2/1;
             align-self: stretch;
@@ -71,7 +76,7 @@
         bottom: 0;
         left: 0;
 
-        @include screen($screen-s){
+        @include screen($screen-m){
             padding: $sp-boxes;
         }
     }
@@ -87,7 +92,7 @@
         padding: .4rem 0.8rem;
         border-radius: $br-xxs;
 
-        @include screen($screen-s){
+        @include screen($screen-m){
             font-size: $fs-button;
             padding: 0.8rem 1.6rem;
         }

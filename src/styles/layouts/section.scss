@@ -16,7 +16,7 @@
     border: none;
     padding: 0;
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         border-radius: $br;
         border: solid $clr-black--lighter $border;
         padding: $sp-boxes;

@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: $sp-boxes--mobile;
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         gap: $sp-boxes;
     }
 
@@ -20,6 +20,11 @@
         gap: 0.3rem;
 
         @include screen($screen-s){
+            aspect-ratio: auto;
+            aspect-ratio: 4/3;
+        }
+
+        @include screen($screen-m){
             padding: 8rem 16rem;
             aspect-ratio: auto;
         }
@@ -31,7 +36,7 @@
         line-height: 1;
         margin-bottom: 0rem;
 
-        @include screen($screen-s){
+        @include screen($screen-m){
             font-size: $fs-xl;
         }
     }
@@ -41,7 +46,7 @@
         font-size: $fs-button--mobile;
         line-height: 1.2;
 
-        @include screen($screen-s){
+        @include screen($screen-m){
             font-size: $fs-button;
         }
     }
@@ -52,6 +57,12 @@
         gap: $sp-boxes--mobile;
 
         @include screen($screen-s){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: $sp-boxes;
+        }
+
+        @include screen($screen-m){
             display: grid;
             grid-template-columns: 33% 66%;
             gap: $sp-boxes;

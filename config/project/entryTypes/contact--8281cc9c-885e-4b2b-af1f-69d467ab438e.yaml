@@ -85,6 +85,21 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
+            handle: f_btnText
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f361b552-cea9-4cfb-86ff-dbf768f98b21
+            userCondition: null
+            warning: null
+            width: 100
         name: Cta
         uid: 1fe9457f-26b8-4fb8-a29e-a8b282a60b13
         userCondition: null

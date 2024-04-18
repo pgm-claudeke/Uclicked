@@ -15,8 +15,11 @@
         text-align: left;
 
         @include screen($screen-s){
-            font-size: 4rem;
             text-align: center;
+        }
+        
+        @include screen($screen-m){
+            font-size: 4rem;
         }
     }
 }

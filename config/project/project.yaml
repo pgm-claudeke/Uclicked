@@ -1,9 +1,16 @@
-dateModified: 1713467006
+dateModified: 1713469402
 email:
   fromEmail: claudinedekesel@hotmail.com
   fromName: Uclicked
   transportType: craft\mail\transportadapters\Sendmail
 fs:
+  docs:
+    hasUrls: true
+    name: Docs
+    settings:
+      path: $DOCS_PATH
+    type: craft\fs\Local
+    url: $DOCS_URL
   icons:
     hasUrls: true
     name: Icons
@@ -45,6 +52,7 @@ meta:
     115a7e48-bc3d-4fc6-bb67-0240a8eb88f6: 'Text Alinea' # Text Alinea
     216ed538-45c5-465b-8945-011833aac1c8: Icons # Icons
     746d4468-0766-4f3d-bb17-5f3c7495ab8f: Images # Images
+    770b328f-0e41-499b-a559-935dab483e95: Resume # Resume
     1959c29e-73fd-4e22-9902-be38ade8a5c3: icon # icon
     6286d3b4-4c71-4a92-a574-bde6cb5f2ab9: Expertises # Expertises
     8281cc9c-885e-4b2b-af1f-69d467ab438e: Contact # Contact
@@ -56,6 +64,7 @@ meta:
     b2c49af5-fc90-4ae9-af7a-adb9ef6d0a06: Thumbnail # Thumbnail
     ca146faa-4b2a-46e3-9141-cfb9d9dffeba: Video # Video
     cbc80322-2253-48cd-adad-4ec8f633b2f8: Socials # Socials
+    cbd8ef24-56ce-448e-a938-6de0d44d5379: Docs # Docs
     cec63c16-d6e9-41b6-9c34-4dceaa7f2c07: Skills # Skills
     d4c2549b-486f-4629-b0f8-6f340c62e6e8: Icons # Icons
     daef5396-a035-4614-b8b6-85378f80d621: Home # Home

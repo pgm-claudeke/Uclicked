@@ -14,7 +14,7 @@
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         top: calc($sp-boxes + 3rem);
     }
 
@@ -39,7 +39,7 @@
     align-items: flex-end;
     border-radius: $br-xs;
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         flex-direction: row;
         align-items: center;
     }
@@ -86,7 +86,7 @@
         list-style: none;
         padding-bottom: calc($sp-boxes/2);
 
-        @include screen($screen-s){
+        @include screen($screen-m){
             flex-direction: row;
             padding-bottom: 0;
         }
@@ -100,7 +100,7 @@
         padding: calc($sp-boxes/2) $sp-boxes;
         text-align: right;
 
-        @include screen($screen-s){
+        @include screen($screen-m){
             padding: $sp-boxes calc($sp-boxes/2);
             text-align: left;
         }
@@ -129,7 +129,7 @@
     justify-content: center;
     align-items: center;
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         flex-direction: column;
     }
 
@@ -146,12 +146,12 @@
     .nav__bar--top {
         margin-left: -1.3rem;
 
-        @include screen($screen-s){
+        @include screen($screen-m){
             margin-left: 0;
         }
     }
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         gap: 0.3rem;
     }
 }

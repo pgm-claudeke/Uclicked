@@ -9,7 +9,7 @@
     border-radius: calc($br - 0.4rem);
     padding: 1.5rem;
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         padding: $sp-boxes;
     }
 }
@@ -27,7 +27,7 @@
 .box--text {
     padding: 2rem;
 
-    @include screen($screen-s){
+    @include screen($screen-m){
         padding: 4rem;
     }
 }
