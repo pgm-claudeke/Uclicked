@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: f_text
+handle: f_ytId
 instructions: null
-name: Text
+name: 'Youtube Video Id'
 searchable: false
 settings:
   byteLimit: null
@@ -12,5 +12,5 @@ settings:
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\PlainText

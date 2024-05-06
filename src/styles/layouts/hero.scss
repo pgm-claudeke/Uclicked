@@ -71,9 +71,16 @@
 
     &__portrait {
         aspect-ratio: 5/4;
+        overflow: hidden;
 
         @include screen($screen-s){
             aspect-ratio: auto;
         }
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }

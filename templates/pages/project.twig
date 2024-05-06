@@ -3,6 +3,7 @@
 {% block content %}
     {% set tools = entry.f_skills.all() %}
     {% set assets = entry.f_assets.one() %}
+    
 
     <main class="main--project">
         <section class="section--project project">
@@ -25,10 +26,10 @@
                     <div class="swiper-pagination"></div>
                 </div>
             {% elseif assets is not null and assets.type.name|lower == 'video' %}
-                <div class="project__assets project__assets--video">                
-                    <video controls width="320" height="320" class="project__video">
-                        <source src="{{ assets.f_video.one().getUrl() }}" type="video/mp4">
-                    </video>
+                <div class="project__assets project__assets--video">   
+                    <iframe class="project__video" id="ytplayer" type="text/html" width="640" height="360"
+                    src="https://www.youtube.com/embed/{{assets.f_ytId}}"
+                    frameborder="0"></iframe>             
                 </div>
             {% endif %}
             <div class="project__info">

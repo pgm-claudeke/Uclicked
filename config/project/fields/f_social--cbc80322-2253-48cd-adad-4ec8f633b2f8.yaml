@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: f_socials
+handle: f_social
 instructions: null
-name: Socials
+name: Social
 searchable: false
 settings:
   options:
@@ -46,6 +46,17 @@ settings:
         -
           - value
           - github
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Youtube
+        -
+          - value
+          - youtube
         -
           - default
           - ''

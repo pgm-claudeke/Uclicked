@@ -43,7 +43,7 @@
         }
     }
 
-    &__item--2, &__item--5, &__item--8 {
+    &__item--2, &__item--5 {
         @include screen($screen-m){
             grid-column: span 2;
             aspect-ratio: 2/1;

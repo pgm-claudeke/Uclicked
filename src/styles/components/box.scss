@@ -15,12 +15,12 @@
 }
 
 .box--border {
-    border: solid $clr-black--lighter .125rem;
+    border: solid $clr-black--lighter $border;
 }
 
 .box--fillBorder {
     background-color: $clr-black--light;
-    border: solid $clr-black--lighter .125rem;
+    border: solid $clr-black--lighter $border;
     
 }
 

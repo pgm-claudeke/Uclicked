@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uclicked</title>
+    <title>{{ entry.title|lower == 'home' ? 'Uclicked' : 'Uclicked | ' ~ entry.title  ?? 'Artimedia' }}</title>
     {# Styles #}
-    {# <link rel="stylesheet" href="{{ craft.vite.entry("style.css") }}">  #}
-
+    <link rel="stylesheet" href="{{ craft.app.sites.primarySite.baseUrl }}/dist/assets/style-lciK6VUX.css"> 
+    <link rel="stylesheet" href="{{ craft.app.sites.primarySite.baseUrl }}/dist/assets/app-DFBZEGIm.css"> 
     {# Fonts #}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+    {# Favicons #}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ craft.app.sites.primarySite.baseUrl }}/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ craft.app.sites.primarySite.baseUrl }}/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ craft.app.sites.primarySite.baseUrl }}/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ craft.app.sites.primarySite.baseUrl }}/assets/favicon/site.webmanifest">
+    {# CookieYes #}
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/bb39e8aa78c7b2fa5babdd7a/script.js"></script></head>
 <body>
     
     {% block content %}{% endblock %}
 
-    {{ craft.vite.script("src/scripts/app.js") }}
-    {# <script src="{{ craft.vite.entry("app.js") }}"></script>  #}
+    {# {{ craft.vite.script("src/scripts/app.js") }} #}
+    <script src="{{ craft.app.sites.primarySite.baseUrl }}/dist/assets/app-C4MDL8cS.js"></script> 
+    <script src="{{ craft.app.sites.primarySite.baseUrl }}/dist/assets/app-C4MDL8cS.js.map"></script> 
 </body>
 </html>

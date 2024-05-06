@@ -1,6 +1,6 @@
-{% set content = craft.entries().section('work').limit(8) %}
+{% set content = craft.entries().section('work').limit(9) %}
 
-<section class="section section--border work" id="work">
+<section id="work" class="section section--border work">
     <h1>Work</h1>
     <ul class="work__list">
         {% for item in content %}
@@ -12,7 +12,6 @@
                     {% endif %}
                     <div class="work__info">
                         <p class="work__title">{{ item.title }}</p>
-                        {# <p class="work__expertise">{{  item.f_expertise.one() }}</p> #}
                     </div>
                 </a>
             </li>

@@ -19,7 +19,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  3bbf42b8-b5c8-43e8-8af4-b0abae578917: # Uclicked En
+  3bbf42b8-b5c8-43e8-8af4-b0abae578917: # Uclicked EN
     enabledByDefault: true
     hasUrls: true
     template: pages/project.twig

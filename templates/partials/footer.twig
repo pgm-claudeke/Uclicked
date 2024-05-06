@@ -1,5 +1,5 @@
 {% set content = craft.entries().section('contact').one() %}
-{% set socials = content.socials.limit(4) %}
+{% set socials = content.f_socials.limit(4) %}
 {% set sites = craft.app.sites.getAllSites() %}
 
 <footer class="footer">
@@ -7,12 +7,12 @@
         <div class="section contact">
             <div class="box contact__box box--text">
                 <h1>{{ content.f_title }}</h1>
-                <p>{{ content.f_text }}</p>
+                <p>{{ content.f_textAlinea }}</p>
                 <a class="button" href="mailto:{{ content.f_email }}">{{ content.f_btnText }}</a>
             </div>
             <div class="contact__socials">
                 {% for item in socials %}
-                    <a class="contact__link" href="{{item.f_link}}" target="_blank">{{ svg('@webroot/assets/icons/' ~ item.f_socials ~ '.svg')|attr({class: 'contact__icon'}) }}</a>
+                    <a class="contact__link" href="{{item.f_link}}" target="_blank">{{ svg('@webroot/assets/icons/' ~ item.f_social ~ '.svg')|attr({class: 'contact__icon'}) }}</a>
                 {% endfor %}
             </div>
         </div>

@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: f_video
+handle: f_image
 instructions: null
-name: Video
+name: Image
 searchable: false
 settings:
   allowSelfRelations: false
@@ -9,7 +9,7 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
-  defaultUploadLocationSource: 'volume:ca146faa-4b2a-46e3-9141-cfb9d9dffeba' # Video
+  defaultUploadLocationSource: 'volume:0a5f20a3-628b-45b5-be87-cc02bac4e750' # Images
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
@@ -23,11 +23,11 @@ settings:
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
-    - 'volume:ca146faa-4b2a-46e3-9141-cfb9d9dffeba' # Video
+    - 'volume:0a5f20a3-628b-45b5-be87-cc02bac4e750' # Images
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

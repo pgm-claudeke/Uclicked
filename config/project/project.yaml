@@ -1,4 +1,4 @@
-dateModified: 1713469402
+dateModified: 1715005020
 email:
   fromEmail: claudinedekesel@hotmail.com
   fromName: Uclicked
@@ -35,8 +35,9 @@ fs:
 meta:
   __names__:
     0a5f20a3-628b-45b5-be87-cc02bac4e750: Images # Images
-    3bbf42b8-b5c8-43e8-8af4-b0abae578917: 'Uclicked En' # Uclicked En
+    3bbf42b8-b5c8-43e8-8af4-b0abae578917: 'Uclicked EN' # Uclicked EN
     4b96d956-e446-4be1-9b4f-fa85cfbd3d69: Tags # Tags
+    4e05fdb0-e6a3-4352-8b75-7ef015a03916: Image # Image
     5a789c66-a838-4ee6-bac8-09c7df998fb7: Socials # Socials
     5c72c7b2-7a1c-4edf-8b98-a0f2bc44148e: Link # Link
     5fabca4f-259c-4561-9900-33030a68bb33: 'Public Schema' # Public Schema
@@ -63,7 +64,7 @@ meta:
     a2274db0-64ad-4f59-9623-a3412077c5c5: Uclicked # Uclicked
     b2c49af5-fc90-4ae9-af7a-adb9ef6d0a06: Thumbnail # Thumbnail
     ca146faa-4b2a-46e3-9141-cfb9d9dffeba: Video # Video
-    cbc80322-2253-48cd-adad-4ec8f633b2f8: Socials # Socials
+    cbc80322-2253-48cd-adad-4ec8f633b2f8: Social # Social
     cbd8ef24-56ce-448e-a938-6de0d44d5379: Docs # Docs
     cec63c16-d6e9-41b6-9c34-4dceaa7f2c07: Skills # Skills
     d4c2549b-486f-4629-b0f8-6f340c62e6e8: Icons # Icons
@@ -74,12 +75,16 @@ meta:
     ee062bb8-9e99-418e-b265-d5d174a15317: Email # Email
     eea874d8-2eb3-40ac-bb62-2eb01772fec2: Work # Work
     f18e2668-3f92-4c4a-b4c0-dffe8f4c373a: Socials # Socials
-    f7440752-7251-4605-907b-7a296c79cdf5: Video # Video
+    f7440752-7251-4605-907b-7a296c79cdf5: 'Youtube Video Id' # Youtube Video Id
 plugins:
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
   vite:
     edition: standard
     enabled: true
@@ -88,8 +93,9 @@ system:
   edition: solo
   live: true
   name: Uclicked
+  retryDuration: null
   schemaVersion: 5.0.0.20
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Brussels
 users:
   allowPublicRegistration: false
   defaultGroup: null

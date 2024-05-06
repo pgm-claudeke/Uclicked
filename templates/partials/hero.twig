@@ -7,12 +7,14 @@
     </div>
     <div class="hero__bottom">    
         <div class="box box--fillBorder hero__portrait">
-            <div></div>
+            {% if content.f_image.one() %}            
+                <img class="hero__image" src="{{ content.f_image.one().getUrl() }}" alt="{{ content.f_image.one().title }}">
+            {% endif %}
         </div>
         <div class="box box--fillBorder box--text hero__about">
             <h1>{{ content.f_title }}</h1>
-            <p>{{ content.f_description }}</p>
-            <a class="button" href="{{ content.f_resume.one().getUrl() }}" download>{{ content.f_btnText }}</a>
+            <p>{{ content.f_textAlinea }}</p>
+            <a class="button" href="{{ content.f_resume.one().getUrl() }}" target="_blank">{{ content.f_btnText }}</a>
         </div>
     </div>
 </section>

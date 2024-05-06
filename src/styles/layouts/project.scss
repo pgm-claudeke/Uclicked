@@ -34,6 +34,11 @@
         height: 100%;
         align-self: stretch;
         position: relative;
+        aspect-ratio: 5/4;
+
+        @include screen($screen-l){
+            aspect-ratio: auto;
+        }
     }
 
     &__image {
@@ -83,7 +88,13 @@
 
     &__assets--video {
         background-color: $clr-black--lighter;
+        aspect-ratio: 5/3;
+
+        @include screen($screen-l){
+            aspect-ratio: auto;
+        }
     }
+    
 
     &__video {
         height: 100%;

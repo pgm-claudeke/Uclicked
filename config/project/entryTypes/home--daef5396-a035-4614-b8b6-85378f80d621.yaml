@@ -78,6 +78,21 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 4e05fdb0-e6a3-4352-8b75-7ef015a03916 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Portrait
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: daefbe06-1cf8-4425-9a85-a93779b75721
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
             handle: f_title
             includeInCards: false
@@ -103,21 +118,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 11f88386-e0da-49e2-a7de-c64324d9aa63
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: a34a85ee-a035-4936-8703-75bba665b387 # Text
-            handle: f_description
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 49646cbe-5430-4e1f-975a-d6149cd7ce4c
             userCondition: null
             warning: null
             width: 100

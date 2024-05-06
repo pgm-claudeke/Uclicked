@@ -2,9 +2,11 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "craftcms/ckeditor": "^4.0.3",
-    "craftcms/cms": "5.0.4",
+    "craftcms/ckeditor": "4.0.4",
+    "craftcms/cms": "5.1.1",
+    "ether/seo": "v5.0.0-rc2",
     "nystudio107/craft-vite": "5.0.0",
+    "spicyweb/craft-embedded-assets": "^5.0.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
