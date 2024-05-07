@@ -70,7 +70,7 @@
     }
 
     &__portrait {
-        aspect-ratio: 5/4;
+        aspect-ratio: 1/1;
         overflow: hidden;
 
         @include screen($screen-s){

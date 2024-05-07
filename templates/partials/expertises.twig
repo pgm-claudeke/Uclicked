@@ -7,18 +7,18 @@
             {% set tags = item.f_tags %}
             {% set icons = item.f_icons.all() %}
             <li class="box box--fill expertises__box" @click="expertise = [ expertise == '{{ item.title|kebab }}' ? '' : '{{ item.title|kebab }}']" :class="[expertise == '{{ item.title|kebab }}' ? 'expertises__box--selected' : '']">
-                <div class="expertises__icons">
-                    {% for icon in icons %}
-                        <img class="expertises__icon" src="{{ icon.f_icon.one().getUrl() }}" alt="">
-                    {% endfor %}
-                </div>
-                <h2 class="expertises__name">{{ item.title }}</h2>
-                <ul class="expertises__tags">
-                    {% for tag in tags %}
-                        <li class="expertises__tag">{{ tag.f_tagName }}</li>
-                    {% endfor %}
-                </ul>
-                <p class="expertises__text">{{ item.f_text }}</p>
+                    <div class="expertises__icons">
+                        {% for icon in icons %}
+                            <img class="expertises__icon" src="{{ icon.f_icon.one().getUrl() }}" alt="">
+                        {% endfor %}
+                    </div>
+                    <h2 class="expertises__name">{{ item.title }}</h2>
+                    <ul class="expertises__tags">
+                        {% for tag in tags %}
+                            <li class="expertises__tag">{{ tag.f_tagName }}</li>
+                        {% endfor %}
+                    </ul>
+                    <p class="expertises__text">{{ item.f_text }}</p>
             </li>
         {% endfor %}
     </ul>

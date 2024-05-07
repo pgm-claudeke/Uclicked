@@ -34,7 +34,7 @@
         height: 100%;
         align-self: stretch;
         position: relative;
-        aspect-ratio: 5/4;
+        aspect-ratio: 1/1;
 
         @include screen($screen-l){
             aspect-ratio: auto;
@@ -88,7 +88,7 @@
 
     &__assets--video {
         background-color: $clr-black--lighter;
-        aspect-ratio: 5/3;
+        aspect-ratio: 1/1;
 
         @include screen($screen-l){
             aspect-ratio: auto;
@@ -173,6 +173,11 @@
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         gap: $sp-s;
+        margin-bottom: 3rem;
+
+        @include screen($screen-l){
+            margin-bottom: auto;
+        }
     }
 
     &__nav-button {

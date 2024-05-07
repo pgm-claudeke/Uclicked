@@ -1,4 +1,4 @@
-dateModified: 1715005020
+dateModified: 1715112476
 email:
   fromEmail: claudinedekesel@hotmail.com
   fromName: Uclicked
@@ -25,13 +25,13 @@ fs:
       path: $IMAGES_PATH
     type: craft\fs\Local
     url: $IMAGES_URL
-  videos:
+  transforms:
     hasUrls: true
-    name: 'Video''s'
+    name: Transforms
     settings:
-      path: $VIDEOS_PATH
+      path: $TRANSFORMS_PATH
     type: craft\fs\Local
-    url: $VIDEOS_URL
+    url: $TRANSFORMS_URL
 meta:
   __names__:
     0a5f20a3-628b-45b5-be87-cc02bac4e750: Images # Images
@@ -63,7 +63,6 @@ meta:
     a34a85ee-a035-4936-8703-75bba665b387: Text # Text
     a2274db0-64ad-4f59-9623-a3412077c5c5: Uclicked # Uclicked
     b2c49af5-fc90-4ae9-af7a-adb9ef6d0a06: Thumbnail # Thumbnail
-    ca146faa-4b2a-46e3-9141-cfb9d9dffeba: Video # Video
     cbc80322-2253-48cd-adad-4ec8f633b2f8: Social # Social
     cbd8ef24-56ce-448e-a938-6de0d44d5379: Docs # Docs
     cec63c16-d6e9-41b6-9c34-4dceaa7f2c07: Skills # Skills
